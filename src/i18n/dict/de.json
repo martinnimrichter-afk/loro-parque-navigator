@@ -1,0 +1,14 @@
+{
+  "app.title": "Park Navigator",
+  "app.subtitle": "Inoffizieller Besucherführer für den Loro Parque",
+  "shows.title": "Heutige Shows",
+  "shows.easy": "Du schaffst es",
+  "shows.rush": "Beeil dich!",
+  "shows.missed": "Zu spät",
+  "shows.unreachable": "Route nicht verfügbar",
+  "shows.done": "Keine weiteren Shows heute",
+  "shows.updated": "Zeitplan aktualisiert",
+  "shows.offlineNote": "Offline — letzter bekannter Zeitplan",
+  "route.walk": "zu Fuß",
+  "disclaimer.text": "Inoffizielle App. Nicht mit Loro Parque verbunden. Showzeiten können sich ändern — offiziellen Plan am Eingang prüfen. Kartendaten stammen aus OpenStreetMap und werden noch vor Ort geprüft — Standorte gelten als Beta."
+}

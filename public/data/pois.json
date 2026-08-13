@@ -1,0 +1,720 @@
+[
+  {
+    "id": "way/216263944",
+    "category": "food",
+    "name": {
+      "en": "Patio del Loro"
+    },
+    "lat": 28.409849740000002,
+    "lon": -16.563809613333333
+  },
+  {
+    "id": "way/271991484",
+    "category": "shop",
+    "name": {
+      "en": "shop"
+    },
+    "lat": 28.40810014285714,
+    "lon": -16.565908414285712
+  },
+  {
+    "id": "way/271991486",
+    "category": "shop",
+    "name": {
+      "en": "Photos"
+    },
+    "lat": 28.408115316666667,
+    "lon": -16.565584833333332
+  },
+  {
+    "id": "way/389436478",
+    "category": "food",
+    "name": {
+      "en": "Casa Pepe"
+    },
+    "lat": 28.408680225,
+    "lon": -16.56475035
+  },
+  {
+    "id": "way/389953812",
+    "category": "animal",
+    "name": {
+      "en": "Orca-train roller-coaster"
+    },
+    "lat": 28.408946642857142,
+    "lon": -16.563053564285713
+  },
+  {
+    "id": "way/1198011295",
+    "category": "shop",
+    "name": {
+      "en": "shop"
+    },
+    "lat": 28.408158825000005,
+    "lon": -16.563963199999996
+  },
+  {
+    "id": "node/268100176",
+    "category": "animal",
+    "name": {
+      "en": "Pueblo Thai",
+      "es": "Pueblo Thai"
+    },
+    "lat": 28.4081678,
+    "lon": -16.5658882
+  },
+  {
+    "id": "node/347312075",
+    "category": "animal",
+    "name": {
+      "en": "Gorillas",
+      "es": "Gorilas",
+      "de": "Gorillas"
+    },
+    "lat": 28.4072206,
+    "lon": -16.5652996
+  },
+  {
+    "id": "node/347312287",
+    "category": "animal",
+    "name": {
+      "en": "Planet Penguin"
+    },
+    "lat": 28.40735,
+    "lon": -16.5647864
+  },
+  {
+    "id": "node/347312606",
+    "category": "animal",
+    "name": {
+      "en": "Sea Lions"
+    },
+    "lat": 28.4078895,
+    "lon": -16.5647786
+  },
+  {
+    "id": "node/347312713",
+    "category": "animal",
+    "name": {
+      "en": "Tigers Island"
+    },
+    "lat": 28.4083757,
+    "lon": -16.563892
+  },
+  {
+    "id": "node/667357972",
+    "category": "animal",
+    "name": {
+      "en": "Katandra Treetops"
+    },
+    "lat": 28.4098673,
+    "lon": -16.5646192
+  },
+  {
+    "id": "node/2652526672",
+    "category": "toilets",
+    "name": {
+      "en": "toilets"
+    },
+    "lat": 28.4081078,
+    "lon": -16.5637507
+  },
+  {
+    "id": "node/2652526870",
+    "category": "animal",
+    "name": {
+      "en": "Orca Ocean Show"
+    },
+    "lat": 28.4078269,
+    "lon": -16.5633806
+  },
+  {
+    "id": "node/2652526871",
+    "category": "food",
+    "name": {
+      "en": "Loritali"
+    },
+    "lat": 28.408555,
+    "lon": -16.5645105
+  },
+  {
+    "id": "node/2652526872",
+    "category": "toilets",
+    "name": {
+      "en": "toilets"
+    },
+    "lat": 28.4089408,
+    "lon": -16.5646028
+  },
+  {
+    "id": "node/2652526873",
+    "category": "toilets",
+    "name": {
+      "en": "toilets"
+    },
+    "lat": 28.4102391,
+    "lon": -16.5643895
+  },
+  {
+    "id": "node/2652526874",
+    "category": "toilets",
+    "name": {
+      "en": "toilets"
+    },
+    "lat": 28.4090697,
+    "lon": -16.5636807
+  },
+  {
+    "id": "node/2652526875",
+    "category": "animal",
+    "name": {
+      "en": "Loro Show"
+    },
+    "lat": 28.4088361,
+    "lon": -16.564103
+  },
+  {
+    "id": "node/2652526883",
+    "category": "animal",
+    "name": {
+      "en": "Acuario"
+    },
+    "lat": 28.4082164,
+    "lon": -16.5652284
+  },
+  {
+    "id": "node/2769228037",
+    "category": "entrance",
+    "name": {
+      "en": "entrance"
+    },
+    "lat": 28.4072345,
+    "lon": -16.5649926
+  },
+  {
+    "id": "node/2769244436",
+    "category": "toilets",
+    "name": {
+      "en": "toilets"
+    },
+    "lat": 28.4078668,
+    "lon": -16.5659506
+  },
+  {
+    "id": "node/3069963617",
+    "category": "entrance",
+    "name": {
+      "en": "Loro Parque"
+    },
+    "lat": 28.4081978,
+    "lon": -16.5659445
+  },
+  {
+    "id": "node/3926060229",
+    "category": "entrance",
+    "name": {
+      "en": "entrance"
+    },
+    "lat": 28.4090804,
+    "lon": -16.5663484
+  },
+  {
+    "id": "node/3926074074",
+    "category": "animal",
+    "name": {
+      "en": "American Alligator"
+    },
+    "lat": 28.4088153,
+    "lon": -16.5648576
+  },
+  {
+    "id": "node/3926087610",
+    "category": "shop",
+    "name": {
+      "en": "shop"
+    },
+    "lat": 28.4085711,
+    "lon": -16.5653726
+  },
+  {
+    "id": "node/3926092654",
+    "category": "shop",
+    "name": {
+      "en": "shop"
+    },
+    "lat": 28.4081347,
+    "lon": -16.5657991
+  },
+  {
+    "id": "node/3926094834",
+    "category": "food",
+    "name": {
+      "en": "Café Bar Thai"
+    },
+    "lat": 28.4081512,
+    "lon": -16.5657133
+  },
+  {
+    "id": "node/3926096560",
+    "category": "info",
+    "name": {
+      "en": "info"
+    },
+    "lat": 28.4079742,
+    "lon": -16.5659653
+  },
+  {
+    "id": "node/3926097588",
+    "category": "animal",
+    "name": {
+      "en": "Parrots"
+    },
+    "lat": 28.4085925,
+    "lon": -16.5651521
+  },
+  {
+    "id": "node/3926099468",
+    "category": "toilets",
+    "name": {
+      "en": "toilets"
+    },
+    "lat": 28.408736,
+    "lon": -16.5649259
+  },
+  {
+    "id": "node/3926099469",
+    "category": "shop",
+    "name": {
+      "en": "shop"
+    },
+    "lat": 28.4086536,
+    "lon": -16.5649259
+  },
+  {
+    "id": "node/3931047335",
+    "category": "animal",
+    "name": {
+      "en": "Bat grotto",
+      "de": "Fledermaus-Grotte"
+    },
+    "lat": 28.4087513,
+    "lon": -16.5642748
+  },
+  {
+    "id": "node/3931052397",
+    "category": "animal",
+    "name": {
+      "en": "Chimpanzees"
+    },
+    "lat": 28.4082778,
+    "lon": -16.5643031
+  },
+  {
+    "id": "node/3931068951",
+    "category": "entrance",
+    "name": {
+      "en": "entrance"
+    },
+    "lat": 28.4096803,
+    "lon": -16.5637009
+  },
+  {
+    "id": "node/3931078345",
+    "category": "animal",
+    "name": {
+      "en": "Meerkat",
+      "de": "Erdmännchen"
+    },
+    "lat": 28.4095542,
+    "lon": -16.5633661
+  },
+  {
+    "id": "node/3931078468",
+    "category": "animal",
+    "name": {
+      "en": "Ring-tailed lemur",
+      "de": "Kattas"
+    },
+    "lat": 28.4095137,
+    "lon": -16.5631957
+  },
+  {
+    "id": "node/3931099460",
+    "category": "animal",
+    "name": {
+      "en": "Shark"
+    },
+    "lat": 28.4082235,
+    "lon": -16.5653009
+  },
+  {
+    "id": "node/3931130505",
+    "category": "animal",
+    "name": {
+      "en": "Red Panda",
+      "es": "Panda Rojo",
+      "de": "Rote Pandas"
+    },
+    "lat": 28.4089513,
+    "lon": -16.5635132
+  },
+  {
+    "id": "node/3931147514",
+    "category": "food",
+    "name": {
+      "en": "Bamboo Bar"
+    },
+    "lat": 28.4088982,
+    "lon": -16.5632825
+  },
+  {
+    "id": "node/3932868281",
+    "category": "shop",
+    "name": {
+      "en": "shop"
+    },
+    "lat": 28.407745,
+    "lon": -16.5645179
+  },
+  {
+    "id": "node/3932878548",
+    "category": "toilets",
+    "name": {
+      "en": "toilets"
+    },
+    "lat": 28.4087618,
+    "lon": -16.564255
+  },
+  {
+    "id": "node/3932878549",
+    "category": "shop",
+    "name": {
+      "en": "shop"
+    },
+    "lat": 28.4074785,
+    "lon": -16.5647378
+  },
+  {
+    "id": "node/3932885297",
+    "category": "food",
+    "name": {
+      "en": "La Choza de los Duques"
+    },
+    "lat": 28.4086628,
+    "lon": -16.564542
+  },
+  {
+    "id": "node/3932887207",
+    "category": "food",
+    "name": {
+      "en": "Cafe Vista Teide"
+    },
+    "lat": 28.4076271,
+    "lon": -16.5643543
+  },
+  {
+    "id": "node/3932889450",
+    "category": "toilets",
+    "name": {
+      "en": "toilets"
+    },
+    "lat": 28.4076989,
+    "lon": -16.5640322
+  },
+  {
+    "id": "node/3932894558",
+    "category": "shop",
+    "name": {
+      "en": "Loro Parque Foundation"
+    },
+    "lat": 28.4086816,
+    "lon": -16.5644146
+  },
+  {
+    "id": "node/3932900418",
+    "category": "animal",
+    "name": {
+      "en": "Jaguar",
+      "de": "Jaguare"
+    },
+    "lat": 28.4091546,
+    "lon": -16.5631727
+  },
+  {
+    "id": "node/3932911530",
+    "category": "food",
+    "name": {
+      "en": "El Puente"
+    },
+    "lat": 28.4089705,
+    "lon": -16.5645151
+  },
+  {
+    "id": "node/3932945933",
+    "category": "animal",
+    "name": {
+      "en": "Orchidarium"
+    },
+    "lat": 28.4092384,
+    "lon": -16.5633806
+  },
+  {
+    "id": "node/3932954380",
+    "category": "animal",
+    "name": {
+      "en": "Koi Carp"
+    },
+    "lat": 28.407785,
+    "lon": -16.565848
+  },
+  {
+    "id": "node/3940343260",
+    "category": "shop",
+    "name": {
+      "en": "shop"
+    },
+    "lat": 28.4092012,
+    "lon": -16.5646602
+  },
+  {
+    "id": "node/3940343261",
+    "category": "shop",
+    "name": {
+      "en": "shop"
+    },
+    "lat": 28.4089841,
+    "lon": -16.5637297
+  },
+  {
+    "id": "node/3940347557",
+    "category": "animal",
+    "name": {
+      "en": "Flamingos",
+      "de": "Flamingos"
+    },
+    "lat": 28.4093735,
+    "lon": -16.5636331
+  },
+  {
+    "id": "node/3940354035",
+    "category": "animal",
+    "name": {
+      "en": "Otters",
+      "de": "Otter"
+    },
+    "lat": 28.4087611,
+    "lon": -16.5637402
+  },
+  {
+    "id": "node/3940354788",
+    "category": "animal",
+    "name": {
+      "en": "Dolphins",
+      "de": "Delfine"
+    },
+    "lat": 28.4086634,
+    "lon": -16.5635473
+  },
+  {
+    "id": "node/3940355476",
+    "category": "animal",
+    "name": {
+      "en": "Two Toed Sloths",
+      "de": "Zweifinger-Faultiere"
+    },
+    "lat": 28.407847,
+    "lon": -16.5640918
+  },
+  {
+    "id": "node/3940363713",
+    "category": "animal",
+    "name": {
+      "en": "Emperor Marmosets"
+    },
+    "lat": 28.4078564,
+    "lon": -16.5644056
+  },
+  {
+    "id": "node/3940371792",
+    "category": "animal",
+    "name": {
+      "en": "Anteaters"
+    },
+    "lat": 28.4080027,
+    "lon": -16.5643466
+  },
+  {
+    "id": "node/3940403262",
+    "category": "animal",
+    "name": {
+      "en": "Giant tortoises",
+      "de": "Riesenschildkröten"
+    },
+    "lat": 28.4085453,
+    "lon": -16.5640502
+  },
+  {
+    "id": "node/5489380310",
+    "category": "entrance",
+    "name": {
+      "en": "entrance"
+    },
+    "lat": 28.40911,
+    "lon": -16.5662867
+  },
+  {
+    "id": "node/5792885911",
+    "category": "food",
+    "name": {
+      "en": "food"
+    },
+    "lat": 28.4089454,
+    "lon": -16.56439
+  },
+  {
+    "id": "node/5792885912",
+    "category": "shop",
+    "name": {
+      "en": "shop"
+    },
+    "lat": 28.408907,
+    "lon": -16.5642976
+  },
+  {
+    "id": "node/5792885913",
+    "category": "info",
+    "name": {
+      "en": "Mapa"
+    },
+    "lat": 28.4082685,
+    "lon": -16.5655524
+  },
+  {
+    "id": "node/5792885920",
+    "category": "animal",
+    "name": {
+      "en": "Lions",
+      "de": "Löwen"
+    },
+    "lat": 28.4097521,
+    "lon": -16.5633524
+  },
+  {
+    "id": "node/5792885987",
+    "category": "shop",
+    "name": {
+      "en": "shop"
+    },
+    "lat": 28.4090217,
+    "lon": -16.5642407
+  },
+  {
+    "id": "node/5792885988",
+    "category": "shop",
+    "name": {
+      "en": "Magma"
+    },
+    "lat": 28.4090639,
+    "lon": -16.5642998
+  },
+  {
+    "id": "node/5792886079",
+    "category": "shop",
+    "name": {
+      "en": "shop"
+    },
+    "lat": 28.4089793,
+    "lon": -16.5641475
+  },
+  {
+    "id": "node/5792888858",
+    "category": "shop",
+    "name": {
+      "en": "Sweet Obsession"
+    },
+    "lat": 28.4090108,
+    "lon": -16.5643554
+  },
+  {
+    "id": "node/5792895390",
+    "category": "info",
+    "name": {
+      "en": "info"
+    },
+    "lat": 28.4088621,
+    "lon": -16.5638211
+  },
+  {
+    "id": "node/5792895689",
+    "category": "info",
+    "name": {
+      "en": "Mapa"
+    },
+    "lat": 28.4087945,
+    "lon": -16.5644873
+  },
+  {
+    "id": "node/5792895696",
+    "category": "info",
+    "name": {
+      "en": "Map",
+      "es": "Mapa"
+    },
+    "lat": 28.4091607,
+    "lon": -16.5638864
+  },
+  {
+    "id": "node/5792895763",
+    "category": "info",
+    "name": {
+      "en": "info"
+    },
+    "lat": 28.4099181,
+    "lon": -16.5641184
+  },
+  {
+    "id": "node/5792895764",
+    "category": "info",
+    "name": {
+      "en": "info"
+    },
+    "lat": 28.4096658,
+    "lon": -16.563857
+  },
+  {
+    "id": "node/5792895858",
+    "category": "info",
+    "name": {
+      "en": "info"
+    },
+    "lat": 28.4080846,
+    "lon": -16.5644382
+  },
+  {
+    "id": "node/5829604140",
+    "category": "animal",
+    "name": {
+      "en": "Animal Embassy"
+    },
+    "lat": 28.4087187,
+    "lon": -16.5652367
+  },
+  {
+    "id": "node/6442111293",
+    "category": "show",
+    "name": {
+      "en": "Orca Show"
+    },
+    "lat": 28.4076842,
+    "lon": -16.5634092
+  },
+  {
+    "id": "node/11114140333",
+    "category": "animal",
+    "name": {
+      "en": "Lion's Kingdom"
+    },
+    "lat": 28.4097101,
+    "lon": -16.563357
+  }
+]

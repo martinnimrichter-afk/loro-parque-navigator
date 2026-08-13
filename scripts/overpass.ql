@@ -1,0 +1,25 @@
+[out:json][timeout:90];
+( way["name"="Loro Parque"][tourism];
+  relation["name"="Loro Parque"][tourism]; );
+map_to_area ->.park;
+(
+  way(area.park)[highway];
+  way(area.park)[building];
+  way(area.park)["natural"="water"];
+  way(area.park)[water];
+  way(area.park)[leisure];
+  way(area.park)[landuse];
+  way(area.park)[tourism];
+  way(area.park)[amenity];
+  way(area.park)[attraction];
+  way(area.park)[zoo];
+  node(area.park)[tourism];
+  node(area.park)[amenity];
+  node(area.park)[shop];
+  node(area.park)[attraction];
+  node(area.park)[zoo];
+  node(area.park)[entrance];
+);
+out body;
+>;
+out skel qt;
