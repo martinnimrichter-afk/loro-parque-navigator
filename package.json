@@ -1,0 +1,25 @@
+{
+  "name": "loro-parque-navigator",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "playwright test",
+    "data:fetch": "node scripts/fetch-osm.mjs",
+    "data:build": "node scripts/build-data.mjs"
+  },
+  "dependencies": {
+    "maplibre-gl": "^6.3.0"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.1.10",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.1",
+    "vitest": "^4.1.10"
+  }
+}
