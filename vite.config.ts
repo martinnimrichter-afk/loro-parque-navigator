@@ -3,6 +3,10 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
   base: '/loro-parque-navigator/',
+  // maplibre-gl instantiates its worker with `{ type: 'module' }`, so the
+  // `?worker&url`-bundled maplibre-gl-worker chunk (src/map/init.ts) must be
+  // emitted as an ES module, not Vite's default IIFE worker format.
+  worker: { format: 'es' },
   plugins: [
     VitePWA({
       registerType: 'autoUpdate',
@@ -20,9 +24,11 @@ export default defineConfig({
         ]
       },
       workbox: {
-        // maplibre-gl-worker is emitted with a .mjs extension (imported via `?url`
-        // in src/map/init.ts) — it must be included here or the map worker fails
-        // to load once the app runs fully from the offline cache.
+        // maplibre-gl-worker is bundled via `?worker&url` (src/map/init.ts) and
+        // emitted as its own hashed .js chunk — already covered by the `js`
+        // pattern below. `mjs` is kept for any other ESM asset that shows up;
+        // it must stay covered or the map worker fails to load once the app
+        // runs fully from the offline cache.
         globPatterns: ['**/*.{js,mjs,css,html,svg,png,ico,webmanifest,geojson,json}'],
         globIgnores: ['**/data/shows.json'],
         runtimeCaching: [{
