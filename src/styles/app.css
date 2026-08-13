@@ -8,3 +8,9 @@ html, body, #map { height: 100%; font-family: var(--font-ui); }
   box-shadow: 0 1px 4px rgb(0 0 0 / 0.25); cursor: pointer;
 }
 .poi:active { transform: scale(1.15); }
+
+.me-dot {
+  width: 14px; height: 14px; border-radius: 50%;
+  background: #2563eb; border: 3px solid #fff;
+  box-shadow: 0 0 0 2px rgb(37 99 235 / 0.4);
+}
