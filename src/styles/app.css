@@ -27,15 +27,18 @@ html, body, #map { height: 100%; font-family: var(--font-ui); }
 }
 
 #topbar {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 10;
-  display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
-  background: #fff; box-shadow: 0 2px 10px rgb(0 0 0 / 0.15);
-  padding: calc(10px + env(safe-area-inset-top)) 16px 10px;
+  position: fixed; top: calc(10px + env(safe-area-inset-top)); left: 50%; z-index: 10;
+  transform: translateX(-50%);
+  display: flex; align-items: center; gap: 10px;
+  max-width: calc(100% - 24px);
+  background: #fff; border-radius: 999px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.15);
+  padding: 8px 10px 8px 18px;
 }
-.topbar-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-#app-title { font-size: 1.05rem; font-weight: 700; color: var(--color-ink); line-height: 1.1; }
+.topbar-text { display: flex; flex-direction: column; gap: 0; min-width: 0; }
+#app-title { font-size: 1rem; font-weight: 700; color: var(--color-ink); line-height: 1.15; }
 #app-subtitle {
-  font-size: 0.75rem; color: var(--color-ink); opacity: 0.7;
+  font-size: 0.7rem; color: var(--color-ink); opacity: 0.7;
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 #lang-switcher { display: flex; gap: 4px; flex-shrink: 0; }
@@ -45,6 +48,31 @@ html, body, #map { height: 100%; font-family: var(--font-ui); }
   cursor: pointer;
 }
 #lang-switcher button[aria-pressed="true"] { background: var(--color-primary); color: #fff; }
+
+.topbar-info {
+  flex-shrink: 0; border: none; cursor: pointer;
+  width: 26px; height: 26px; border-radius: 50%;
+  background: var(--color-surface); color: var(--color-ink);
+  font-size: 0.95rem; line-height: 1;
+  display: flex; align-items: center; justify-content: center;
+}
+
+dialog.about {
+  max-width: 28rem; width: calc(100% - 32px);
+  border: none; border-radius: 16px;
+  padding: 22px; box-shadow: 0 10px 40px rgb(0 0 0 / 0.3);
+  font-family: var(--font-ui); color: var(--color-ink);
+}
+dialog.about::backdrop { background: rgb(0 0 0 / 0.4); }
+dialog.about h2 { margin: 0 0 6px; font-size: 1.2rem; }
+.about-subtitle { margin: 0 0 14px; font-size: 0.85rem; opacity: 0.75; }
+.about-disclaimer { margin: 0 0 14px; font-size: 0.85rem; line-height: 1.5; }
+.about-meta { margin: 0 0 4px; font-size: 0.75rem; opacity: 0.65; }
+.about-close {
+  margin-top: 14px; border: none; border-radius: 999px;
+  background: var(--color-primary); color: #fff;
+  padding: 10px 22px; font-size: 0.9rem; font-weight: 700; cursor: pointer;
+}
 
 #shows-panel {
   position: fixed; bottom: 0; left: 0; right: 0; z-index: 10;

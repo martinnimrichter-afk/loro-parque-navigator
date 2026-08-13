@@ -7,13 +7,16 @@ import { startTracking, effectivePosition, type LocationState } from './geo/loca
 import { route } from './geo/route';
 import { loadShows } from './shows/schedule';
 import { renderShowsPanel } from './ui/showsPanel';
+import { createAboutDialog } from './ui/about';
 import { detectLang, makeT } from './i18n/i18n';
 import { PARK_ENTRANCE } from './config';
+import pkg from '../package.json';
 import type { Graph, Lang, Poi } from './types';
 
 const EMPTY_FC = { type: 'FeatureCollection', features: [] } as const;
 const SHOWS_REFRESH_MS = 30_000;
 const SUPPORTED_LANGS: Lang[] = ['en', 'es', 'de'];
+const SEEN_DISCLAIMER_KEY = 'lpn.seen-disclaimer';
 
 let locationState: LocationState = { status: 'pending', position: null };
 let lang: Lang = detectLang(navigator.language);
@@ -22,6 +25,7 @@ let lastRouteTarget: { lat: number; lon: number } | null = null;
 
 const map = initMap('map');
 const etaChip = document.getElementById('eta')!;
+const topbarEl = document.getElementById('topbar')!;
 const appTitleEl = document.getElementById('app-title')!;
 const appSubtitleEl = document.getElementById('app-subtitle')!;
 const langSwitcherEl = document.getElementById('lang-switcher')!;
@@ -83,6 +87,12 @@ function renderPanel(): void {
   });
 }
 
+function makeAbout(): HTMLDialogElement {
+  const dialog = createAboutDialog({ t, updated: showsData.updated, version: pkg.version });
+  dialog.addEventListener('close', () => localStorage.setItem(SEEN_DISCLAIMER_KEY, '1'));
+  return dialog;
+}
+
 function renderStaticText(): void {
   document.documentElement.lang = lang;
   appTitleEl.textContent = t('app.title');
@@ -114,14 +124,38 @@ function setLang(next: Lang): void {
   renderStaticText();
   renderMeta();
   renderPanel();
+  rebuildAbout();
   if (lastRouteTarget) showRouteTo(lastRouteTarget);
 }
+
+// Rebuild instead of patching: the dialog's whole body is one `innerHTML` render keyed on `t`,
+// so swapping in a fresh dialog is simpler than diffing its markup on every language switch.
+function rebuildAbout(): void {
+  const wasOpen = about.open;
+  about.remove();
+  about = makeAbout();
+  if (wasOpen) about.showModal();
+}
+
+let about = makeAbout();
+
+const infoBtn = document.createElement('button');
+infoBtn.type = 'button';
+infoBtn.className = 'topbar-info';
+infoBtn.textContent = 'ⓘ';
+infoBtn.setAttribute('aria-label', 'About');
+infoBtn.addEventListener('click', () => about.showModal());
+topbarEl.append(infoBtn);
 
 buildLangSwitcher();
 renderStaticText();
 renderMeta();
 renderPanel();
 setInterval(renderPanel, SHOWS_REFRESH_MS);
+
+if (!localStorage.getItem(SEEN_DISCLAIMER_KEY)) {
+  about.showModal();
+}
 
 map.on('load', () => {
   addPoiMarkers(map, pois, (poi) => showRouteTo(poi));
