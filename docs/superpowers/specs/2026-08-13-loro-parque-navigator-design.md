@@ -27,8 +27,8 @@ Statická PWA bez backendu:
 |---|---|
 | Build | Vite + TypeScript |
 | Mapa | MapLibre GL JS |
-| Dlaždice | Vlastní **PMTiles** z OSM výřezu parku (primárně planetiler, fallback tilemaker), jeden statický soubor (~jednotky MB) |
-| Offline | Service worker (vite-plugin-pwa) — precache appky, dlaždic i dat; po prvním otevření funguje vše bez signálu |
+| Mapa parku | Vykreslená **přímo z bundlovaného GeoJSON** (vlastní styl à la parková mapa: cesty, voda, zeleň, budovy) — park má 13,5 ha, dlaždice nejsou potřeba. PMTiles jen jako fallback, kdyby GeoJSON nestačil. *(Změna 2026-08-13 při plánování: méně toolingu — bez Javy/planetileru, offline triviálně.)* |
+| Offline | Service worker (vite-plugin-pwa) — precache appky i dat; po prvním otevření funguje vše bez signálu |
 | Routing | Graf předpočítaný při buildu z OSM pěšin, v klientovi Dijkstra (park ~13,5 ha → graf maličký) |
 | Shows | Statický `shows.json` vedle appky — fetch při startu, cache pro offline |
 | Hosting | GitHub Pages, deploy přes GitHub Actions, public repo |
@@ -37,8 +37,7 @@ Statická PWA bez backendu:
 
 1. **Overpass export** polygonu parku z OSM → GeoJSON (cesty + POI), uložený v repu.
 2. **Refresh skript** + soubor ručních oprav (merge přes OSM ID) — terénní opravy nesmí přepsat další OSM import.
-3. **PMTiles generování** z OSM výřezu (build step, planetiler).
-4. **Routing graf** se generuje při buildu z OSM `footway`/`path` geometrie.
+3. **Routing graf** se generuje při buildu z OSM `footway`/`path` geometrie.
 
 Referenční bod: vchod parku GPS `28.4082, -16.5659`.
 
@@ -68,7 +67,7 @@ Referenční bod: vchod parku GPS `28.4082, -16.5659`.
 
 ## Fáze
 
-1. **Data pipeline** — Overpass query, GeoJSON, PMTiles, routing graf (build skripty).
+1. **Data pipeline** — Overpass query, GeoJSON, routing graf (build skripty).
 2. **Mapová PWA** — MapLibre + PMTiles, GPS tečka, zobrazení POI, offline cache.
 3. **Routing** — tap na POI → trasa + ETA.
 4. **Shows** — `shows.json`, fetch/cache, „stíháš to?" UI.
