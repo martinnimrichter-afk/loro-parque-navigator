@@ -1,0 +1,16 @@
+{
+  "updated": "2026-08-13",
+  "timezone": "Atlantic/Canary",
+  "venues": [
+    { "id": "orca-ocean", "name": { "en": "Orca Ocean", "es": "Orca Ocean", "de": "Orca Ocean" }, "lat": 28.4079, "lon": -16.5689 },
+    { "id": "dolphinarium", "name": { "en": "Dolphin Show", "es": "Delfinario", "de": "Delfinshow" }, "lat": 28.4066, "lon": -16.5665 },
+    { "id": "sea-lions", "name": { "en": "Sea Lion Show", "es": "Leones marinos", "de": "Seelöwenshow" }, "lat": 28.4062, "lon": -16.5677 },
+    { "id": "parrot-show", "name": { "en": "Parrot Show", "es": "Show de loros", "de": "Papageienshow" }, "lat": 28.4088, "lon": -16.5652 }
+  ],
+  "shows": [
+    { "venueId": "orca-ocean", "times": ["12:00", "15:45"] },
+    { "venueId": "dolphinarium", "times": ["11:00", "14:30"] },
+    { "venueId": "sea-lions", "times": ["10:15", "13:15", "16:30"] },
+    { "venueId": "parrot-show", "times": ["10:45", "12:45", "14:45", "16:45"] }
+  ]
+}
