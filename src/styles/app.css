@@ -1,3 +1,10 @@
 * { margin: 0; box-sizing: border-box; }
 html, body, #map { height: 100%; font-family: var(--font-ui); }
 #map { position: fixed; inset: 0; }
+
+.poi {
+  border: none; background: #fff; border-radius: 50%;
+  width: 30px; height: 30px; font-size: 16px; line-height: 1;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.25); cursor: pointer;
+}
+.poi:active { transform: scale(1.15); }
