@@ -6,7 +6,7 @@ An offline-first progressive web app (PWA) for navigating Loro Parque, the renow
 
 ## Live App
 
-Open in your browser: [https://<account>.github.io/loro-parque-navigator/](https://<account>.github.io/loro-parque-navigator/)
+Open in your browser: [https://martinnimrichter-afk.github.io/loro-parque-navigator/](https://martinnimrichter-afk.github.io/loro-parque-navigator/)
 
 On a phone, install as a PWA (tap the "Install" button in your browser) and use offline.
 
