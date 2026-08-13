@@ -2,10 +2,10 @@
   "updated": "2026-08-13",
   "timezone": "Atlantic/Canary",
   "venues": [
-    { "id": "orca-ocean", "name": { "en": "Orca Ocean", "es": "Orca Ocean", "de": "Orca Ocean" }, "lat": 28.4079, "lon": -16.5689 },
-    { "id": "dolphinarium", "name": { "en": "Dolphin Show", "es": "Delfinario", "de": "Delfinshow" }, "lat": 28.4066, "lon": -16.5665 },
-    { "id": "sea-lions", "name": { "en": "Sea Lion Show", "es": "Leones marinos", "de": "Seelöwenshow" }, "lat": 28.4062, "lon": -16.5677 },
-    { "id": "parrot-show", "name": { "en": "Parrot Show", "es": "Show de loros", "de": "Papageienshow" }, "lat": 28.4088, "lon": -16.5652 }
+    { "id": "orca-ocean", "name": { "en": "Orca Ocean", "es": "Orca Ocean", "de": "Orca Ocean" }, "lat": 28.40783, "lon": -16.56338 },
+    { "id": "dolphinarium", "name": { "en": "Dolphin Show", "es": "Delfinario", "de": "Delfinshow" }, "lat": 28.40866, "lon": -16.56355 },
+    { "id": "sea-lions", "name": { "en": "Sea Lion Show", "es": "Leones marinos", "de": "Seelöwenshow" }, "lat": 28.40789, "lon": -16.56478 },
+    { "id": "parrot-show", "name": { "en": "Parrot Show", "es": "Show de loros", "de": "Papageienshow" }, "lat": 28.40884, "lon": -16.56410 }
   ],
   "shows": [
     { "venueId": "orca-ocean", "times": ["12:00", "15:45"] },
