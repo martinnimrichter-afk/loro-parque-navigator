@@ -5,6 +5,7 @@
   "shows.easy": "Llegas bien",
   "shows.rush": "¡Date prisa!",
   "shows.missed": "Demasiado tarde",
+  "shows.unreachable": "Ruta no disponible",
   "shows.done": "No hay más espectáculos hoy",
   "shows.updated": "Horario actualizado",
   "shows.offlineNote": "Sin conexión — último horario conocido",

@@ -100,8 +100,11 @@ dialog.about h2 { margin: 0 0 6px; font-size: 1.2rem; }
 .show-row--easy { border-left-color: var(--color-easy); }
 .show-row--rush { border-left-color: var(--color-rush); }
 .show-row--missed { border-left-color: var(--color-missed); opacity: 0.55; }
+.show-row--unreachable { border-left-color: var(--color-unreachable); opacity: 0.7; }
+.show-status { grid-column: 4; } /* keeps status right-aligned even when the walk-time chip is omitted */
 .show-status--easy { color: var(--color-easy); font-weight: 600; }
 .show-status--rush { color: var(--color-rush); font-weight: 600; }
 .show-status--missed { color: var(--color-missed); }
+.show-status--unreachable { color: var(--color-unreachable); }
 .show-time { font-variant-numeric: tabular-nums; font-weight: 700; }
 .show-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

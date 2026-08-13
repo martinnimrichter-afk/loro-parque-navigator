@@ -6,6 +6,7 @@
   --color-easy: #15803d;
   --color-rush: #d97706;
   --color-missed: #b91c1c;
+  --color-unreachable: #6b7280;
   --radius-panel: 16px 16px 0 0;
   --shadow-panel: 0 -4px 24px rgb(0 0 0 / 0.15);
   --font-ui: system-ui, -apple-system, 'Segoe UI', sans-serif;

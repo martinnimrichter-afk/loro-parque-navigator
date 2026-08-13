@@ -5,6 +5,7 @@
   "shows.easy": "You'll make it",
   "shows.rush": "Hurry up!",
   "shows.missed": "Too late",
+  "shows.unreachable": "Route unavailable",
   "shows.done": "No more shows today",
   "shows.updated": "Schedule updated",
   "shows.offlineNote": "Offline — showing last known schedule",

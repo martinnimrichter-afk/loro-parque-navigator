@@ -5,6 +5,7 @@ import { initMap } from './map/init';
 import { addPoiMarkers } from './map/markers';
 import { startTracking, effectivePosition, type LocationState } from './geo/location';
 import { route } from './geo/route';
+import { haversineM } from './geo/distance';
 import { loadShows } from './shows/schedule';
 import { renderShowsPanel } from './ui/showsPanel';
 import { createAboutDialog } from './ui/about';
@@ -15,6 +16,12 @@ import type { Graph, Lang, Poi } from './types';
 
 const EMPTY_FC = { type: 'FeatureCollection', features: [] } as const;
 const SHOWS_REFRESH_MS = 30_000;
+// Below this, a GPS tick's shows-panel re-render is skipped: watchPosition can
+// fire ~1 Hz while walking, and rebuilding the panel (replaceChildren) on every
+// tick can swallow a tap mid-interaction. The 30 s interval above still covers
+// time-based drift (e.g. a show's status flipping from easy to rush while
+// standing still), so this only throttles *position-driven* re-renders.
+const PANEL_REFRESH_MIN_MOVE_M = 15;
 const SUPPORTED_LANGS: Lang[] = ['en', 'es', 'de'];
 const SEEN_DISCLAIMER_KEY = 'lpn.seen-disclaimer';
 
@@ -22,6 +29,7 @@ let locationState: LocationState = { status: 'pending', position: null };
 let lang: Lang = detectLang(navigator.language);
 let t = makeT(lang);
 let lastRouteTarget: { lat: number; lon: number } | null = null;
+let lastPanelOrigin: { lat: number; lon: number } | null = null;
 
 const map = initMap('map');
 const etaChip = document.getElementById('eta')!;
@@ -75,6 +83,7 @@ function renderMeta(): void {
 }
 
 function renderPanel(): void {
+  lastPanelOrigin = currentOrigin();
   renderShowsPanel({
     container: showsListEl,
     data: showsData,
@@ -168,5 +177,8 @@ const meMarker = new maplibregl.Marker({ element: dot });
 startTracking(navigator.geolocation, (state) => {
   locationState = state;
   if (state.position) meMarker.setLngLat([state.position.lon, state.position.lat]).addTo(map);
-  renderPanel();
+  const origin = currentOrigin();
+  const movedEnough = !lastPanelOrigin ||
+    haversineM(lastPanelOrigin.lat, lastPanelOrigin.lon, origin.lat, origin.lon) > PANEL_REFRESH_MIN_MOVE_M;
+  if (movedEnough) renderPanel();
 });
