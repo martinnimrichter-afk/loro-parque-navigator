@@ -3,3 +3,4 @@ dist/
 data/raw/
 coverage/
 test-results/
+playwright-report/
