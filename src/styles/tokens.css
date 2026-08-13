@@ -1,0 +1,12 @@
+:root {
+  --color-surface: #efe9dc;
+  --color-ink: #22301f;
+  --color-accent: #e8613c;
+  --color-primary: #0f766e;
+  --color-easy: #15803d;
+  --color-rush: #d97706;
+  --color-missed: #b91c1c;
+  --radius-panel: 16px 16px 0 0;
+  --shadow-panel: 0 -4px 24px rgb(0 0 0 / 0.15);
+  --font-ui: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
