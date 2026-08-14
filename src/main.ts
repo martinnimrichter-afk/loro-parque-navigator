@@ -34,7 +34,11 @@ let lastRouteTarget: { lat: number; lon: number } | null = null;
 let lastPanelOrigin: { lat: number; lon: number } | null = null;
 let poiMarkers: maplibregl.Marker[] = [];
 
+/** Past this zoom, named-POI labels join the always-on show venue labels. */
+const ZOOM_LABELS_MIN = 17.5;
+
 const map = initMap('map');
+const mapEl = document.getElementById('map')!;
 const etaChip = document.getElementById('eta')!;
 const topbarEl = document.getElementById('topbar')!;
 const appTitleEl = document.getElementById('app-title')!;
@@ -178,6 +182,12 @@ function renderPoiMarkers(): void {
 }
 
 map.on('load', renderPoiMarkers);
+
+function syncLabelZoom(): void {
+  mapEl.classList.toggle('labels-zoomed', map.getZoom() >= ZOOM_LABELS_MIN);
+}
+map.on('zoom', syncLabelZoom);
+syncLabelZoom();
 map.on('click', () => clearRoute());
 
 const dot = document.createElement('div');

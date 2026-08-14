@@ -18,6 +18,10 @@ html, body, #map { height: 100%; font-family: var(--font-ui); }
   box-shadow: 0 1px 3px rgb(0 0 0 / 0.2); pointer-events: none;
 }
 
+/* Named-POI labels only past ZOOM_LABELS_MIN — the whole-park view stays clean. */
+.poi-label--zoom { display: none; }
+#map.labels-zoomed .poi-label--zoom { display: block; }
+
 .me-dot {
   width: 14px; height: 14px; border-radius: 50%;
   background: #2563eb; border: 3px solid #fff;

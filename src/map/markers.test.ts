@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { hasLabel, iconFor, localName } from './markers';
+import { iconFor, labelKind, localName } from './markers';
 
 describe('iconFor', () => {
   test('maps every category to a distinct emoji', () => {
@@ -19,15 +19,21 @@ describe('localName', () => {
   });
 });
 
-describe('hasLabel', () => {
-  test('labels show-category POIs and the show venues', () => {
-    expect(hasLabel({ id: 'node/6442111293', category: 'show' })).toBe(true);   // Orca Show
-    expect(hasLabel({ id: 'node/2652526870', category: 'animal' })).toBe(true); // Orca Ocean Show
-    expect(hasLabel({ id: 'node/3940354788', category: 'animal' })).toBe(true); // Dolphins
+describe('labelKind', () => {
+  test('show venues are always labelled', () => {
+    expect(labelKind({ id: 'node/6442111293', category: 'show', name: { en: 'Orca Show' } })).toBe('always');
+    expect(labelKind({ id: 'node/2652526870', category: 'animal', name: { en: 'Orca Ocean Show' } })).toBe('always');
+    expect(labelKind({ id: 'node/3940354788', category: 'animal', name: { en: 'Dolphins' } })).toBe('always');
   });
 
-  test('leaves ordinary POIs unlabelled', () => {
-    expect(hasLabel({ id: 'node/347312075', category: 'animal' })).toBe(false); // Gorillas
-    expect(hasLabel({ id: 'way/216263944', category: 'food' })).toBe(false);
+  test('named POIs get a zoom-gated label', () => {
+    expect(labelKind({ id: 'node/347312075', category: 'animal', name: { en: 'Gorillas' } })).toBe('zoom');
+    expect(labelKind({ id: 'way/389436478', category: 'food', name: { en: 'Casa Pepe' } })).toBe('zoom');
+  });
+
+  test('placeholder-named POIs stay icon-only', () => {
+    expect(labelKind({ id: 'node/2652526872', category: 'toilets', name: { en: 'toilets' } })).toBe(null);
+    expect(labelKind({ id: 'node/5792885913', category: 'info', name: { en: 'Mapa' } })).toBe(null);
+    expect(labelKind({ id: 'node/2769228037', category: 'entrance', name: { en: 'entrance' } })).toBe(null);
   });
 });
