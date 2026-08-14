@@ -1,22 +1,44 @@
 import * as maplibregl from 'maplibre-gl';
-import type { Lang, LocalName, Poi, PoiCategory } from '../types';
+import type { Lang, LocalName, Poi } from '../types';
+import { iconFor, poiIcon } from './icons';
 
-const ICONS: Record<PoiCategory, string> = {
-  animal: '🦜', show: '🎭', food: '🍽️', toilets: '🚻',
-  shop: '🛍️', info: 'ℹ️', water: '🚰', entrance: '🚪'
-};
+export { iconFor, poiIcon };
 
-export const iconFor = (category: PoiCategory): string => ICONS[category];
+/**
+ * Show venues get an always-visible name label on the map; ids are the POIs
+ * where the four daily shows actually run (plus anything tagged `show`).
+ */
+const LABELLED_POI_IDS = new Set([
+  'node/6442111293',  // Orca Show
+  'node/2652526870',  // Orca Ocean Show
+  'node/2652526875',  // Loro Show
+  'node/347312606',   // Sea Lions
+  'node/3940354788'   // Dolphins (dolphinarium)
+]);
+
+export const hasLabel = (poi: Pick<Poi, 'id' | 'category'>): boolean =>
+  poi.category === 'show' || LABELLED_POI_IDS.has(poi.id);
 
 export const localName = (name: LocalName, lang: Lang): string => name[lang] ?? name.en;
 
-export function addPoiMarkers(map: maplibregl.Map, pois: Poi[], onSelect: (poi: Poi) => void): void {
-  for (const poi of pois) {
+export function addPoiMarkers(
+  map: maplibregl.Map,
+  pois: Poi[],
+  lang: Lang,
+  onSelect: (poi: Poi) => void
+): maplibregl.Marker[] {
+  return pois.map((poi) => {
     const el = document.createElement('button');
     el.className = `poi poi--${poi.category}`;
-    el.textContent = iconFor(poi.category);
-    el.setAttribute('aria-label', poi.name.en);
+    el.textContent = poiIcon(poi);
+    el.setAttribute('aria-label', localName(poi.name, lang));
     el.addEventListener('click', (e) => { e.stopPropagation(); onSelect(poi); });
-    new maplibregl.Marker({ element: el }).setLngLat([poi.lon, poi.lat]).addTo(map);
-  }
+    if (hasLabel(poi)) {
+      const label = document.createElement('span');
+      label.className = 'poi-label';
+      label.textContent = localName(poi.name, lang);
+      el.append(label);
+    }
+    return new maplibregl.Marker({ element: el }).setLngLat([poi.lon, poi.lat]).addTo(map);
+  });
 }

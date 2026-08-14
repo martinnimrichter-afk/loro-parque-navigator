@@ -1,6 +1,6 @@
-export type Lang = 'en' | 'es' | 'de';
+export type Lang = 'en' | 'es' | 'de' | 'cs' | 'pl' | 'fr';
 
-export interface LocalName { en: string; es?: string; de?: string; }
+export interface LocalName { en: string; es?: string; de?: string; cs?: string; pl?: string; fr?: string; }
 
 export type PoiCategory = 'animal' | 'show' | 'food' | 'toilets' | 'shop' | 'info' | 'water' | 'entrance';
 

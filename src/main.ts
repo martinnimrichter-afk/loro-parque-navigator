@@ -22,7 +22,9 @@ const SHOWS_REFRESH_MS = 30_000;
 // time-based drift (e.g. a show's status flipping from easy to rush while
 // standing still), so this only throttles *position-driven* re-renders.
 const PANEL_REFRESH_MIN_MOVE_M = 15;
-const SUPPORTED_LANGS: Lang[] = ['en', 'es', 'de'];
+const SUPPORTED_LANGS: Lang[] = ['en', 'es', 'de', 'cs', 'pl', 'fr'];
+/** Button captions: ISO codes except Czech, where visitors expect CZ over CS. */
+const LANG_LABELS: Record<Lang, string> = { en: 'EN', es: 'ES', de: 'DE', cs: 'CZ', pl: 'PL', fr: 'FR' };
 const SEEN_DISCLAIMER_KEY = 'lpn.seen-disclaimer';
 
 let locationState: LocationState = { status: 'pending', position: null };
@@ -30,6 +32,7 @@ let lang: Lang = detectLang(navigator.language);
 let t = makeT(lang);
 let lastRouteTarget: { lat: number; lon: number } | null = null;
 let lastPanelOrigin: { lat: number; lon: number } | null = null;
+let poiMarkers: maplibregl.Marker[] = [];
 
 const map = initMap('map');
 const etaChip = document.getElementById('eta')!;
@@ -117,7 +120,7 @@ function buildLangSwitcher(): void {
     ...SUPPORTED_LANGS.map((code) => {
       const btn = document.createElement('button');
       btn.type = 'button';
-      btn.textContent = code.toUpperCase();
+      btn.textContent = LANG_LABELS[code];
       btn.dataset.lang = code;
       btn.setAttribute('aria-pressed', String(code === lang));
       btn.addEventListener('click', () => setLang(code));
@@ -133,6 +136,7 @@ function setLang(next: Lang): void {
   renderStaticText();
   renderMeta();
   renderPanel();
+  renderPoiMarkers();
   rebuildAbout();
   if (lastRouteTarget) showRouteTo(lastRouteTarget);
 }
@@ -166,9 +170,14 @@ if (!localStorage.getItem(SEEN_DISCLAIMER_KEY)) {
   about.showModal();
 }
 
-map.on('load', () => {
-  addPoiMarkers(map, pois, (poi) => showRouteTo(poi));
-});
+// Markers are DOM overlays independent of the map style, so rebuilding them on
+// a language switch (localized labels + aria-labels) is safe even pre-'load'.
+function renderPoiMarkers(): void {
+  for (const m of poiMarkers) m.remove();
+  poiMarkers = addPoiMarkers(map, pois, lang, (poi) => showRouteTo(poi));
+}
+
+map.on('load', renderPoiMarkers);
 map.on('click', () => clearRoute());
 
 const dot = document.createElement('div');

@@ -1,0 +1,14 @@
+{
+  "app.title": "Park Navigator",
+  "app.subtitle": "Neoficiální průvodce po Loro Parque",
+  "shows.title": "Dnešní show",
+  "shows.easy": "V pohodě stíháš",
+  "shows.rush": "Pospěš si!",
+  "shows.missed": "Už to nestihneš",
+  "shows.unreachable": "Trasa nedostupná",
+  "shows.done": "Dnes už žádná show není",
+  "shows.updated": "Program aktualizován",
+  "shows.offlineNote": "Offline — poslední známý program",
+  "route.walk": "pěšky",
+  "disclaimer.text": "Neoficiální aplikace. Nemá žádnou vazbu na Loro Parque. Časy show se mohou měnit — ověřte si oficiální program u vchodu. Mapová data spravuje komunita (OpenStreetMap) a teprve se ověřují přímo v parku — berte polohy jako beta."
+}

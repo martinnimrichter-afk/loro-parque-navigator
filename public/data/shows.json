@@ -2,10 +2,10 @@
   "updated": "2026-08-13",
   "timezone": "Atlantic/Canary",
   "venues": [
-    { "id": "orca-ocean", "name": { "en": "Orca Ocean", "es": "Orca Ocean", "de": "Orca Ocean" }, "lat": 28.40783, "lon": -16.56338 },
-    { "id": "dolphinarium", "name": { "en": "Dolphin Show", "es": "Delfinario", "de": "Delfinshow" }, "lat": 28.40866, "lon": -16.56355 },
-    { "id": "sea-lions", "name": { "en": "Sea Lion Show", "es": "Leones marinos", "de": "Seelöwenshow" }, "lat": 28.40789, "lon": -16.56478 },
-    { "id": "parrot-show", "name": { "en": "Parrot Show", "es": "Show de loros", "de": "Papageienshow" }, "lat": 28.40884, "lon": -16.56410 }
+    { "id": "orca-ocean", "name": { "en": "Orca Ocean", "es": "Orca Ocean", "de": "Orca Ocean", "cs": "Orca Ocean", "pl": "Orca Ocean", "fr": "Orca Ocean" }, "lat": 28.40783, "lon": -16.56338 },
+    { "id": "dolphinarium", "name": { "en": "Dolphin Show", "es": "Delfinario", "de": "Delfinshow", "cs": "Delfíní show", "pl": "Pokaz delfinów", "fr": "Spectacle de dauphins" }, "lat": 28.40866, "lon": -16.56355 },
+    { "id": "sea-lions", "name": { "en": "Sea Lion Show", "es": "Leones marinos", "de": "Seelöwenshow", "cs": "Lachtaní show", "pl": "Pokaz lwów morskich", "fr": "Spectacle d'otaries" }, "lat": 28.40789, "lon": -16.56478 },
+    { "id": "parrot-show", "name": { "en": "Parrot Show", "es": "Show de loros", "de": "Papageienshow", "cs": "Papouščí show", "pl": "Pokaz papug", "fr": "Spectacle de perroquets" }, "lat": 28.40884, "lon": -16.56410 }
   ],
   "shows": [
     { "venueId": "orca-ocean", "times": ["12:00", "15:45"] },
