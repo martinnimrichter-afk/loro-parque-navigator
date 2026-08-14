@@ -69,7 +69,10 @@
     "name": {
       "en": "Gorillas",
       "es": "Gorilas",
-      "de": "Gorillas"
+      "de": "Gorillas",
+      "cs": "Gorily",
+      "pl": "Goryle",
+      "fr": "Gorilles"
     },
     "lat": 28.4072206,
     "lon": -16.5652996
@@ -87,7 +90,12 @@
     "id": "node/347312606",
     "category": "animal",
     "name": {
-      "en": "Sea Lions"
+      "en": "Sea Lions",
+      "es": "Leones marinos",
+      "de": "Seelöwen",
+      "cs": "Lachtani",
+      "pl": "Lwy morskie",
+      "fr": "Otaries"
     },
     "lat": 28.4078895,
     "lon": -16.5647786
@@ -96,7 +104,12 @@
     "id": "node/347312713",
     "category": "animal",
     "name": {
-      "en": "Tigers Island"
+      "en": "Tigers Island",
+      "es": "Isla de los Tigres",
+      "de": "Tiger-Insel",
+      "cs": "Tygří ostrov",
+      "pl": "Wyspa tygrysów",
+      "fr": "Île aux tigres"
     },
     "lat": 28.4083757,
     "lon": -16.563892
@@ -177,7 +190,12 @@
     "id": "node/2652526883",
     "category": "animal",
     "name": {
-      "en": "Acuario"
+      "en": "Aquarium",
+      "es": "Acuario",
+      "de": "Aquarium",
+      "cs": "Akvárium",
+      "pl": "Akwarium",
+      "fr": "Aquarium"
     },
     "lat": 28.4082164,
     "lon": -16.5652284
@@ -222,7 +240,12 @@
     "id": "node/3926074074",
     "category": "animal",
     "name": {
-      "en": "American Alligator"
+      "en": "American Alligator",
+      "es": "Aligátor americano",
+      "de": "Mississippi-Alligator",
+      "cs": "Aligátor americký",
+      "pl": "Aligator amerykański",
+      "fr": "Alligator d'Amérique"
     },
     "lat": 28.4088153,
     "lon": -16.5648576
@@ -267,7 +290,12 @@
     "id": "node/3926097588",
     "category": "animal",
     "name": {
-      "en": "Parrots"
+      "en": "Parrots",
+      "es": "Loros",
+      "de": "Papageien",
+      "cs": "Papoušci",
+      "pl": "Papugi",
+      "fr": "Perroquets"
     },
     "lat": 28.4085925,
     "lon": -16.5651521
@@ -295,7 +323,11 @@
     "category": "animal",
     "name": {
       "en": "Bat grotto",
-      "de": "Fledermaus-Grotte"
+      "es": "Gruta de murciélagos",
+      "de": "Fledermaus-Grotte",
+      "cs": "Netopýří jeskyně",
+      "pl": "Grota nietoperzy",
+      "fr": "Grotte aux chauves-souris"
     },
     "lat": 28.4087513,
     "lon": -16.5642748
@@ -304,7 +336,12 @@
     "id": "node/3931052397",
     "category": "animal",
     "name": {
-      "en": "Chimpanzees"
+      "en": "Chimpanzees",
+      "es": "Chimpancés",
+      "de": "Schimpansen",
+      "cs": "Šimpanzi",
+      "pl": "Szympansy",
+      "fr": "Chimpanzés"
     },
     "lat": 28.4082778,
     "lon": -16.5643031
@@ -322,8 +359,12 @@
     "id": "node/3931078345",
     "category": "animal",
     "name": {
-      "en": "Meerkat",
-      "de": "Erdmännchen"
+      "en": "Meerkats",
+      "es": "Suricatas",
+      "de": "Erdmännchen",
+      "cs": "Surikaty",
+      "pl": "Surykatki",
+      "fr": "Suricates"
     },
     "lat": 28.4095542,
     "lon": -16.5633661
@@ -332,8 +373,12 @@
     "id": "node/3931078468",
     "category": "animal",
     "name": {
-      "en": "Ring-tailed lemur",
-      "de": "Kattas"
+      "en": "Ring-tailed lemurs",
+      "es": "Lémures de cola anillada",
+      "de": "Kattas",
+      "cs": "Lemuři kata",
+      "pl": "Lemury katta",
+      "fr": "Makis catta"
     },
     "lat": 28.4095137,
     "lon": -16.5631957
@@ -342,7 +387,12 @@
     "id": "node/3931099460",
     "category": "animal",
     "name": {
-      "en": "Shark"
+      "en": "Sharks",
+      "es": "Tiburones",
+      "de": "Haie",
+      "cs": "Žraloci",
+      "pl": "Rekiny",
+      "fr": "Requins"
     },
     "lat": 28.4082235,
     "lon": -16.5653009
@@ -352,8 +402,11 @@
     "category": "animal",
     "name": {
       "en": "Red Panda",
-      "es": "Panda Rojo",
-      "de": "Rote Pandas"
+      "es": "Panda rojo",
+      "de": "Roter Panda",
+      "cs": "Panda červená",
+      "pl": "Panda mała",
+      "fr": "Panda roux"
     },
     "lat": 28.4089513,
     "lon": -16.5635132
@@ -434,8 +487,12 @@
     "id": "node/3932900418",
     "category": "animal",
     "name": {
-      "en": "Jaguar",
-      "de": "Jaguare"
+      "en": "Jaguars",
+      "es": "Jaguares",
+      "de": "Jaguare",
+      "cs": "Jaguáři",
+      "pl": "Jaguary",
+      "fr": "Jaguars"
     },
     "lat": 28.4091546,
     "lon": -16.5631727
@@ -453,7 +510,12 @@
     "id": "node/3932945933",
     "category": "animal",
     "name": {
-      "en": "Orchidarium"
+      "en": "Orchidarium",
+      "es": "Orquidario",
+      "de": "Orchidarium",
+      "cs": "Orchidárium",
+      "pl": "Orchidarium",
+      "fr": "Orchidarium"
     },
     "lat": 28.4092384,
     "lon": -16.5633806
@@ -462,7 +524,12 @@
     "id": "node/3932954380",
     "category": "animal",
     "name": {
-      "en": "Koi Carp"
+      "en": "Koi Carp",
+      "es": "Carpas koi",
+      "de": "Koi-Karpfen",
+      "cs": "Kapři koi",
+      "pl": "Karpie koi",
+      "fr": "Carpes koï"
     },
     "lat": 28.407785,
     "lon": -16.565848
@@ -490,7 +557,11 @@
     "category": "animal",
     "name": {
       "en": "Flamingos",
-      "de": "Flamingos"
+      "es": "Flamencos",
+      "de": "Flamingos",
+      "cs": "Plameňáci",
+      "pl": "Flamingi",
+      "fr": "Flamants roses"
     },
     "lat": 28.4093735,
     "lon": -16.5636331
@@ -500,7 +571,11 @@
     "category": "animal",
     "name": {
       "en": "Otters",
-      "de": "Otter"
+      "es": "Nutrias",
+      "de": "Otter",
+      "cs": "Vydry",
+      "pl": "Wydry",
+      "fr": "Loutres"
     },
     "lat": 28.4087611,
     "lon": -16.5637402
@@ -510,7 +585,11 @@
     "category": "animal",
     "name": {
       "en": "Dolphins",
-      "de": "Delfine"
+      "es": "Delfines",
+      "de": "Delfine",
+      "cs": "Delfíni",
+      "pl": "Delfiny",
+      "fr": "Dauphins"
     },
     "lat": 28.4086634,
     "lon": -16.5635473
@@ -520,7 +599,11 @@
     "category": "animal",
     "name": {
       "en": "Two Toed Sloths",
-      "de": "Zweifinger-Faultiere"
+      "es": "Perezosos de dos dedos",
+      "de": "Zweifinger-Faultiere",
+      "cs": "Lenochodi dvouprstí",
+      "pl": "Leniwce dwupalczaste",
+      "fr": "Paresseux à deux doigts"
     },
     "lat": 28.407847,
     "lon": -16.5640918
@@ -529,7 +612,12 @@
     "id": "node/3940363713",
     "category": "animal",
     "name": {
-      "en": "Emperor Marmosets"
+      "en": "Emperor Tamarins",
+      "es": "Tamarinos emperador",
+      "de": "Kaiserschnurrbarttamarine",
+      "cs": "Tamaríni císařští",
+      "pl": "Tamaryny cesarskie",
+      "fr": "Tamarins empereurs"
     },
     "lat": 28.4078564,
     "lon": -16.5644056
@@ -538,7 +626,12 @@
     "id": "node/3940371792",
     "category": "animal",
     "name": {
-      "en": "Anteaters"
+      "en": "Anteaters",
+      "es": "Osos hormigueros",
+      "de": "Ameisenbären",
+      "cs": "Mravenečníci",
+      "pl": "Mrówkojady",
+      "fr": "Fourmiliers"
     },
     "lat": 28.4080027,
     "lon": -16.5643466
@@ -548,7 +641,11 @@
     "category": "animal",
     "name": {
       "en": "Giant tortoises",
-      "de": "Riesenschildkröten"
+      "es": "Tortugas gigantes",
+      "de": "Riesenschildkröten",
+      "cs": "Želvy obrovské",
+      "pl": "Żółwie olbrzymie",
+      "fr": "Tortues géantes"
     },
     "lat": 28.4085453,
     "lon": -16.5640502
@@ -594,7 +691,11 @@
     "category": "animal",
     "name": {
       "en": "Lions",
-      "de": "Löwen"
+      "es": "Leones",
+      "de": "Löwen",
+      "cs": "Lvi",
+      "pl": "Lwy",
+      "fr": "Lions"
     },
     "lat": 28.4097521,
     "lon": -16.5633524
@@ -712,7 +813,12 @@
     "id": "node/11114140333",
     "category": "animal",
     "name": {
-      "en": "Lion's Kingdom"
+      "en": "Lion's Kingdom",
+      "es": "Reino de los Leones",
+      "de": "Königreich der Löwen",
+      "cs": "Lví království",
+      "pl": "Królestwo lwów",
+      "fr": "Royaume des lions"
     },
     "lat": 28.4097101,
     "lon": -16.563357

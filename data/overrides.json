@@ -1,1 +1,30 @@
-{ "add": [], "update": [], "remove": [] }
+{
+  "add": [],
+  "update": [
+    { "id": "node/347312075", "set": { "name": { "en": "Gorillas", "es": "Gorilas", "de": "Gorillas", "cs": "Gorily", "pl": "Goryle", "fr": "Gorilles" } } },
+    { "id": "node/347312606", "set": { "name": { "en": "Sea Lions", "es": "Leones marinos", "de": "Seelöwen", "cs": "Lachtani", "pl": "Lwy morskie", "fr": "Otaries" } } },
+    { "id": "node/347312713", "set": { "name": { "en": "Tigers Island", "es": "Isla de los Tigres", "de": "Tiger-Insel", "cs": "Tygří ostrov", "pl": "Wyspa tygrysów", "fr": "Île aux tigres" } } },
+    { "id": "node/2652526883", "set": { "name": { "en": "Aquarium", "es": "Acuario", "de": "Aquarium", "cs": "Akvárium", "pl": "Akwarium", "fr": "Aquarium" } } },
+    { "id": "node/3926074074", "set": { "name": { "en": "American Alligator", "es": "Aligátor americano", "de": "Mississippi-Alligator", "cs": "Aligátor americký", "pl": "Aligator amerykański", "fr": "Alligator d'Amérique" } } },
+    { "id": "node/3926097588", "set": { "name": { "en": "Parrots", "es": "Loros", "de": "Papageien", "cs": "Papoušci", "pl": "Papugi", "fr": "Perroquets" } } },
+    { "id": "node/3931047335", "set": { "name": { "en": "Bat grotto", "es": "Gruta de murciélagos", "de": "Fledermaus-Grotte", "cs": "Netopýří jeskyně", "pl": "Grota nietoperzy", "fr": "Grotte aux chauves-souris" } } },
+    { "id": "node/3931052397", "set": { "name": { "en": "Chimpanzees", "es": "Chimpancés", "de": "Schimpansen", "cs": "Šimpanzi", "pl": "Szympansy", "fr": "Chimpanzés" } } },
+    { "id": "node/3931078345", "set": { "name": { "en": "Meerkats", "es": "Suricatas", "de": "Erdmännchen", "cs": "Surikaty", "pl": "Surykatki", "fr": "Suricates" } } },
+    { "id": "node/3931078468", "set": { "name": { "en": "Ring-tailed lemurs", "es": "Lémures de cola anillada", "de": "Kattas", "cs": "Lemuři kata", "pl": "Lemury katta", "fr": "Makis catta" } } },
+    { "id": "node/3931099460", "set": { "name": { "en": "Sharks", "es": "Tiburones", "de": "Haie", "cs": "Žraloci", "pl": "Rekiny", "fr": "Requins" } } },
+    { "id": "node/3931130505", "set": { "name": { "en": "Red Panda", "es": "Panda rojo", "de": "Roter Panda", "cs": "Panda červená", "pl": "Panda mała", "fr": "Panda roux" } } },
+    { "id": "node/3932900418", "set": { "name": { "en": "Jaguars", "es": "Jaguares", "de": "Jaguare", "cs": "Jaguáři", "pl": "Jaguary", "fr": "Jaguars" } } },
+    { "id": "node/3932945933", "set": { "name": { "en": "Orchidarium", "es": "Orquidario", "de": "Orchidarium", "cs": "Orchidárium", "pl": "Orchidarium", "fr": "Orchidarium" } } },
+    { "id": "node/3932954380", "set": { "name": { "en": "Koi Carp", "es": "Carpas koi", "de": "Koi-Karpfen", "cs": "Kapři koi", "pl": "Karpie koi", "fr": "Carpes koï" } } },
+    { "id": "node/3940347557", "set": { "name": { "en": "Flamingos", "es": "Flamencos", "de": "Flamingos", "cs": "Plameňáci", "pl": "Flamingi", "fr": "Flamants roses" } } },
+    { "id": "node/3940354035", "set": { "name": { "en": "Otters", "es": "Nutrias", "de": "Otter", "cs": "Vydry", "pl": "Wydry", "fr": "Loutres" } } },
+    { "id": "node/3940354788", "set": { "name": { "en": "Dolphins", "es": "Delfines", "de": "Delfine", "cs": "Delfíni", "pl": "Delfiny", "fr": "Dauphins" } } },
+    { "id": "node/3940355476", "set": { "name": { "en": "Two Toed Sloths", "es": "Perezosos de dos dedos", "de": "Zweifinger-Faultiere", "cs": "Lenochodi dvouprstí", "pl": "Leniwce dwupalczaste", "fr": "Paresseux à deux doigts" } } },
+    { "id": "node/3940363713", "set": { "name": { "en": "Emperor Tamarins", "es": "Tamarinos emperador", "de": "Kaiserschnurrbarttamarine", "cs": "Tamaríni císařští", "pl": "Tamaryny cesarskie", "fr": "Tamarins empereurs" } } },
+    { "id": "node/3940371792", "set": { "name": { "en": "Anteaters", "es": "Osos hormigueros", "de": "Ameisenbären", "cs": "Mravenečníci", "pl": "Mrówkojady", "fr": "Fourmiliers" } } },
+    { "id": "node/3940403262", "set": { "name": { "en": "Giant tortoises", "es": "Tortugas gigantes", "de": "Riesenschildkröten", "cs": "Želvy obrovské", "pl": "Żółwie olbrzymie", "fr": "Tortues géantes" } } },
+    { "id": "node/5792885920", "set": { "name": { "en": "Lions", "es": "Leones", "de": "Löwen", "cs": "Lvi", "pl": "Lwy", "fr": "Lions" } } },
+    { "id": "node/11114140333", "set": { "name": { "en": "Lion's Kingdom", "es": "Reino de los Leones", "de": "Königreich der Löwen", "cs": "Lví království", "pl": "Królestwo lwów", "fr": "Royaume des lions" } } }
+  ],
+  "remove": []
+}
